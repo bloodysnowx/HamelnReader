@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0D3293D11D8E65B6007C7974 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3293D01D8E65B6007C7974 /* AppDelegate.swift */; };
-		0D3293D31D8E65B6007C7974 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3293D21D8E65B6007C7974 /* MasterViewController.swift */; };
-		0D3293D51D8E65B6007C7974 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3293D41D8E65B6007C7974 /* DetailViewController.swift */; };
 		0D3293D81D8E65B6007C7974 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D3293D61D8E65B6007C7974 /* Main.storyboard */; };
 		0D3293DA1D8E65B6007C7974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D3293D91D8E65B6007C7974 /* Assets.xcassets */; };
 		0D3293DD1D8E65B6007C7974 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D3293DB1D8E65B6007C7974 /* LaunchScreen.storyboard */; };
@@ -21,8 +19,14 @@
 		0D32940B1D8E7884007C7974 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D3294041D8E7884007C7974 /* RxBlocking.framework */; };
 		0D32940C1D8E7884007C7974 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D3294051D8E7884007C7974 /* RxCocoa.framework */; };
 		0D32940D1D8E7884007C7974 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D3294061D8E7884007C7974 /* RxSwift.framework */; };
-		0D32940E1D8E7884007C7974 /* RxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D3294071D8E7884007C7974 /* RxTests.framework */; };
 		0D3294121D8E7CF5007C7974 /* HamelnClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3294111D8E7CF5007C7974 /* HamelnClient.swift */; };
+		0D3294161D8EC247007C7974 /* SlideMenuControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D3294151D8EC247007C7974 /* SlideMenuControllerSwift.framework */; };
+		0D3294191D8EC353007C7974 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3294181D8EC353007C7974 /* ContainerViewController.swift */; };
+		0D32941B1D8EC8FB007C7974 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32941A1D8EC8FB007C7974 /* MainViewController.swift */; };
+		0D32941D1D8ECBD5007C7974 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32941C1D8ECBD5007C7974 /* LeftViewController.swift */; };
+		0D32941F1D8ECBE4007C7974 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32941E1D8ECBE4007C7974 /* RightViewController.swift */; };
+		0D3294211D8ECC49007C7974 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3294201D8ECC49007C7974 /* SearchViewController.swift */; };
+		0D3294231D8ECC91007C7974 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3294221D8ECC91007C7974 /* RankingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +49,6 @@
 /* Begin PBXFileReference section */
 		0D3293CD1D8E65B6007C7974 /* HamelnReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HamelnReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D3293D01D8E65B6007C7974 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0D3293D21D8E65B6007C7974 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		0D3293D41D8E65B6007C7974 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0D3293D71D8E65B6007C7974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D3293D91D8E65B6007C7974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D3293DC1D8E65B6007C7974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +67,13 @@
 		0D3294061D8E7884007C7974 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		0D3294071D8E7884007C7974 /* RxTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTests.framework; path = Carthage/Build/iOS/RxTests.framework; sourceTree = "<group>"; };
 		0D3294111D8E7CF5007C7974 /* HamelnClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamelnClient.swift; sourceTree = "<group>"; };
+		0D3294151D8EC247007C7974 /* SlideMenuControllerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SlideMenuControllerSwift.framework; path = Carthage/Build/iOS/SlideMenuControllerSwift.framework; sourceTree = "<group>"; };
+		0D3294181D8EC353007C7974 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		0D32941A1D8EC8FB007C7974 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0D32941C1D8ECBD5007C7974 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		0D32941E1D8ECBE4007C7974 /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
+		0D3294201D8ECC49007C7974 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		0D3294221D8ECC91007C7974 /* RankingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,13 +81,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D3294161D8EC247007C7974 /* SlideMenuControllerSwift.framework in Frameworks */,
 				0D3294081D8E7884007C7974 /* Alamofire.framework in Frameworks */,
 				0D3294091D8E7884007C7974 /* Realm.framework in Frameworks */,
 				0D32940A1D8E7884007C7974 /* RealmSwift.framework in Frameworks */,
 				0D32940B1D8E7884007C7974 /* RxBlocking.framework in Frameworks */,
 				0D32940C1D8E7884007C7974 /* RxCocoa.framework in Frameworks */,
 				0D32940D1D8E7884007C7974 /* RxSwift.framework in Frameworks */,
-				0D32940E1D8E7884007C7974 /* RxTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,10 +132,9 @@
 		0D3293CF1D8E65B6007C7974 /* HamelnReader */ = {
 			isa = PBXGroup;
 			children = (
+				0D3294171D8EC321007C7974 /* ViewController */,
 				0D3294101D8E7CD5007C7974 /* Network */,
 				0D3293D01D8E65B6007C7974 /* AppDelegate.swift */,
-				0D3293D21D8E65B6007C7974 /* MasterViewController.swift */,
-				0D3293D41D8E65B6007C7974 /* DetailViewController.swift */,
 				0D3293D61D8E65B6007C7974 /* Main.storyboard */,
 				0D3293D91D8E65B6007C7974 /* Assets.xcassets */,
 				0D3293DB1D8E65B6007C7974 /* LaunchScreen.storyboard */,
@@ -156,6 +164,7 @@
 		0D3294001D8E7883007C7974 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0D3294151D8EC247007C7974 /* SlideMenuControllerSwift.framework */,
 				0D3294011D8E7884007C7974 /* Alamofire.framework */,
 				0D3294021D8E7884007C7974 /* Realm.framework */,
 				0D3294031D8E7884007C7974 /* RealmSwift.framework */,
@@ -173,6 +182,19 @@
 				0D3294111D8E7CF5007C7974 /* HamelnClient.swift */,
 			);
 			name = Network;
+			sourceTree = "<group>";
+		};
+		0D3294171D8EC321007C7974 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0D3294181D8EC353007C7974 /* ContainerViewController.swift */,
+				0D32941A1D8EC8FB007C7974 /* MainViewController.swift */,
+				0D32941C1D8ECBD5007C7974 /* LeftViewController.swift */,
+				0D32941E1D8ECBE4007C7974 /* RightViewController.swift */,
+				0D3294201D8ECC49007C7974 /* SearchViewController.swift */,
+				0D3294221D8ECC91007C7974 /* RankingViewController.swift */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,8 +339,9 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxTests.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SlideMenuControllerSwift.framework",
 			);
 			outputPaths = (
 			);
@@ -333,10 +356,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D3293D51D8E65B6007C7974 /* DetailViewController.swift in Sources */,
 				0D3294121D8E7CF5007C7974 /* HamelnClient.swift in Sources */,
-				0D3293D31D8E65B6007C7974 /* MasterViewController.swift in Sources */,
+				0D3294211D8ECC49007C7974 /* SearchViewController.swift in Sources */,
+				0D3294191D8EC353007C7974 /* ContainerViewController.swift in Sources */,
 				0D3293D11D8E65B6007C7974 /* AppDelegate.swift in Sources */,
+				0D32941D1D8ECBD5007C7974 /* LeftViewController.swift in Sources */,
+				0D32941B1D8EC8FB007C7974 /* MainViewController.swift in Sources */,
+				0D32941F1D8ECBE4007C7974 /* RightViewController.swift in Sources */,
+				0D3294231D8ECC91007C7974 /* RankingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

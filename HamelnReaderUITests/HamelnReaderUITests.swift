@@ -1,11 +1,3 @@
-//
-//  HamelnReaderUITests.swift
-//  HamelnReaderUITests
-//
-//  Created by IwasaAtsushi on 2016/09/18.
-//  Copyright © 2016年 bloodysnow. All rights reserved.
-//
-
 import XCTest
 
 class HamelnReaderUITests: XCTestCase {
