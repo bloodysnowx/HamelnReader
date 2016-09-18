@@ -1,0 +1,7 @@
+github "Alamofire/Alamofire" ~> 4.0
+github "ReactiveX/RxSwift" "3.0.0-beta.1"
+# github "ReactiveX/RxSwift" ~> 3.0
+# github "RxSwiftCommunity/RxAlamofire"
+# github "sergdort/RxAlamofire" "swift-3.0"
+github "realm/realm-cocoa"
+# github "tid-kijyun/Kanna"
