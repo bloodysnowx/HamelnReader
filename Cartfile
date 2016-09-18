@@ -1,8 +1,10 @@
 github "Alamofire/Alamofire" ~> 4.0
 github "ReactiveX/RxSwift" "3.0.0-beta.1"
-# github "ReactiveX/RxSwift" ~> 3.0
-# github "RxSwiftCommunity/RxAlamofire"
-# github "sergdort/RxAlamofire" "swift-3.0"
+github "RxSwiftCommunity/RxAlamofire" "master"
 github "realm/realm-cocoa"
-# github "tid-kijyun/Kanna"
-github "bloodysnowx/SlideMenuControllerSwift"
+# github "bloodysnowx/SlideMenuControllerSwift"
+# github "dekatotoro/SlideMenuControllerSwift"
+github "tid-kijyun/Kanna" ~> 2.0.0
+github "bloodysnowx/SafeArray" "master"
+github "italki/PKHUD" "Swift-3.0"
+# pkluz/PKHUD

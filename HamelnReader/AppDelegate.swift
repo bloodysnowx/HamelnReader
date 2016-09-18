@@ -6,7 +6,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        HamelnClient.search(originalWork: "原作：オーバーロード")
+        testAPI()
         
         return true
     }
@@ -31,5 +31,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+}
+
+extension AppDelegate {
+    func testAPI() {
+        // HamelnClient.search(originalWork: "原作：オーバーロード")
+
+        /*
+        HamelnClient.searchTypes().subscribe(onNext: { (types) in
+            types.forEach({ (type) in
+                print("name = \(type.name), value = \(type.value)")
+            })
+        }, onError: nil, onCompleted: nil, onDisposed: nil)
+
+        HamelnClient.originalWorks().subscribe(onNext: { (works) in
+            works.forEach({ (work) in
+                print("name = \(work.name), value = \(work.value)")
+            })
+        }, onError: nil, onCompleted: nil, onDisposed: nil)
+        */
     }
 }
