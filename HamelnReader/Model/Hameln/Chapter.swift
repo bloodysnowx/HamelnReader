@@ -9,7 +9,7 @@ class Chapter: Object {
     dynamic var preface: String = ""
     dynamic var text: String = ""
     dynamic var afterword: String = ""
-    dynamic var lastUpdated: NSDate = NSDate()
+    dynamic var lastUpdated: Date = Date()
     dynamic var read: Bool = false
     
     override static func primaryKey() -> String? { return "id" }

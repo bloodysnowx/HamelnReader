@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		0D0D7FBC1D8FAFC000C6060B /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0D7FBB1D8FAFC000C6060B /* History.swift */; };
 		0D0D7FBE1D8FB0E900C6060B /* BSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0D7FBD1D8FB0E900C6060B /* BSError.swift */; };
+		0D0D7FBF1D8FD7AB00C6060B /* RxAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D32946E1D8F9A7A007C7974 /* RxAlamofire.framework */; };
+		0D0D7FC01D8FD7B000C6060B /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D3294021D8E7884007C7974 /* Realm.framework */; };
+		0D0D7FC21D8FD82F00C6060B /* HamelnClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0D7FC11D8FD82F00C6060B /* HamelnClientTests.swift */; };
+		0D0D7FC31D8FDB1500C6060B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D3294031D8E7884007C7974 /* RealmSwift.framework */; };
+		0D0D7FC41D8FDB1B00C6060B /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D3294041D8E7884007C7974 /* RxBlocking.framework */; };
+		0D0D7FC51D8FDB1F00C6060B /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D3294061D8E7884007C7974 /* RxSwift.framework */; };
+		0D0D7FC61D8FDB2400C6060B /* RxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D3294071D8E7884007C7974 /* RxTests.framework */; };
+		0D0D7FC81D8FE5F600C6060B /* RankingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0D7FC71D8FE5F600C6060B /* RankingType.swift */; };
+		0D0D7FCA1D9013E300C6060B /* String+Removing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0D7FC91D9013E300C6060B /* String+Removing.swift */; };
 		0D3293D11D8E65B6007C7974 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3293D01D8E65B6007C7974 /* AppDelegate.swift */; };
 		0D3293D81D8E65B6007C7974 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D3293D61D8E65B6007C7974 /* Main.storyboard */; };
 		0D3293DA1D8E65B6007C7974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D3293D91D8E65B6007C7974 /* Assets.xcassets */; };
@@ -66,6 +75,9 @@
 /* Begin PBXFileReference section */
 		0D0D7FBB1D8FAFC000C6060B /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		0D0D7FBD1D8FB0E900C6060B /* BSError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSError.swift; sourceTree = "<group>"; };
+		0D0D7FC11D8FD82F00C6060B /* HamelnClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamelnClientTests.swift; sourceTree = "<group>"; };
+		0D0D7FC71D8FE5F600C6060B /* RankingType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingType.swift; sourceTree = "<group>"; };
+		0D0D7FC91D9013E300C6060B /* String+Removing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Removing.swift"; sourceTree = SOURCE_ROOT; };
 		0D3293CD1D8E65B6007C7974 /* HamelnReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HamelnReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D3293D01D8E65B6007C7974 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0D3293D71D8E65B6007C7974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -133,6 +145,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D0D7FC51D8FDB1F00C6060B /* RxSwift.framework in Frameworks */,
+				0D0D7FC01D8FD7B000C6060B /* Realm.framework in Frameworks */,
+				0D0D7FBF1D8FD7AB00C6060B /* RxAlamofire.framework in Frameworks */,
+				0D0D7FC31D8FDB1500C6060B /* RealmSwift.framework in Frameworks */,
+				0D0D7FC61D8FDB2400C6060B /* RxTests.framework in Frameworks */,
+				0D0D7FC41D8FDB1B00C6060B /* RxBlocking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				0D3293E71D8E65B6007C7974 /* HamelnReaderTests.swift */,
+				0D0D7FC11D8FD82F00C6060B /* HamelnClientTests.swift */,
 				0D3293E91D8E65B6007C7974 /* Info.plist */,
 			);
 			path = HamelnReaderTests;
@@ -272,6 +291,7 @@
 		0D3294511D8ED64C007C7974 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				0D0D7FC91D9013E300C6060B /* String+Removing.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -287,6 +307,7 @@
 				0D3294521D8EDA50007C7974 /* SearchType.swift */,
 				0D3294651D8EEF2A007C7974 /* Status.swift */,
 				0D32945E1D8EE520007C7974 /* Tag.swift */,
+				0D0D7FC71D8FE5F600C6060B /* RankingType.swift */,
 			);
 			path = Hameln;
 			sourceTree = "<group>";
@@ -463,12 +484,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D0D7FC81D8FE5F600C6060B /* RankingType.swift in Sources */,
 				0D3294611D8EE635007C7974 /* Episode.swift in Sources */,
 				0D3294121D8E7CF5007C7974 /* HamelnClient.swift in Sources */,
 				0D3294211D8ECC49007C7974 /* SearchViewController.swift in Sources */,
 				0D3294661D8EEF2A007C7974 /* Status.swift in Sources */,
 				0D3294191D8EC353007C7974 /* ContainerViewController.swift in Sources */,
 				0D3294551D8EDA76007C7974 /* OriginalWork.swift in Sources */,
+				0D0D7FCA1D9013E300C6060B /* String+Removing.swift in Sources */,
 				0D3293D11D8E65B6007C7974 /* AppDelegate.swift in Sources */,
 				0D3294591D8EDB34007C7974 /* Novel.swift in Sources */,
 				0D32945B1D8EDBBA007C7974 /* Chapter.swift in Sources */,
@@ -492,6 +515,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D3293E81D8E65B6007C7974 /* HamelnReaderTests.swift in Sources */,
+				0D0D7FC21D8FD82F00C6060B /* HamelnClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,6 +706,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HamelnReaderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bloodysnow.HamelnReaderTests;
@@ -696,6 +724,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HamelnReaderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bloodysnow.HamelnReaderTests;

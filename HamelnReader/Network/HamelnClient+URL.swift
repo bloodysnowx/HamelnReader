@@ -21,5 +21,6 @@ extension HamelnClient {
         case Mode = "mode"
         case NovelId = "nid"
         case Keyword = "word"
+        case Page = "page"
     }
 }

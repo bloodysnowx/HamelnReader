@@ -44,18 +44,6 @@ extension AppDelegate {
         }, onError: { (error) in
                 print(error)
         }, onCompleted: nil, onDisposed: nil)
-
-        HamelnClient.searchTypes().subscribe(onNext: { (types) in
-            types.forEach({ (type) in
-                print("name = \(type.name), value = \(type.value)")
-            })
-        }, onError: nil, onCompleted: nil, onDisposed: nil)
-
-        HamelnClient.originalWorks().subscribe(onNext: { (works) in
-            works.forEach({ (work) in
-                print("name = \(work.name), value = \(work.value)")
-            })
-        }, onError: nil, onCompleted: nil, onDisposed: nil)
         */
     }
 }

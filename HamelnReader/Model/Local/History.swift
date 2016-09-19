@@ -3,5 +3,5 @@ import RealmSwift
 
 class History: Object {
     dynamic var chapter: Chapter?
-    dynamic var date: NSDate = NSDate()
+    dynamic var date: Date = Date()
 }

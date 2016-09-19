@@ -5,11 +5,12 @@ class Novel: Object {
     let episodes = List<Episode>()
     let chapters = List<Chapter>()
     dynamic var chaptersCount: Int = 0
+    dynamic var charactersCount: Int = 0
     dynamic var title: String = ""
     dynamic var id: Int = 0
     dynamic var synopsis: String = ""
-    dynamic var started: NSDate = NSDate()
-    dynamic var lastUpdated: NSDate = NSDate()
+    dynamic var started: Date = Date()
+    dynamic var lastUpdated: Date = Date()
     dynamic var author: Author?
     dynamic var originalWork: OriginalWork?
     dynamic var ua: Int = 0
