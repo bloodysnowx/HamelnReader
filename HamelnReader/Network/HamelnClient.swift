@@ -18,8 +18,6 @@ class HamelnClient {
             let sections = html.css(".section3")
             return sections.flatMap({ (elem) -> Novel? in
                 guard let title = elem.css("div.blo_title_base > a").flatMap({ $0.innerHTML }).first,
-                let originalWork = elem.css("div.blo_title_base > div > a:nth-child(1)").flatMap({ $0.innerHTML }).first,
-                let author = elem.css("div.blo_title_base > div > a:nth-child(2)").flatMap({ $0.innerHTML }).first,
                 let chaptersCount = elem.css("div.blo_wasuu_base > a > b").flatMap({ $0.innerHTML }).first.flatMap({ Int($0) }),
                 let charactersCount = elem.css("div.blo_wasuu_base > div").flatMap({ $0.innerHTML }).first.flatMap({ Int($0.removingOccurrences(ary: [" ", ",", "全", "字"])) }),
                 let novelIdStr = elem["id"]?.removingOccurrences(ary: ["nid_"]), let novelId = Int(novelIdStr),
@@ -30,10 +28,16 @@ class HamelnClient {
                 let adjustedAverage = Float(adjustedAverageStr)
                     else { return nil }
                 
+                guard let originalWork = elem.css("div.blo_title_base > div > a:nth-child(1)").flatMap({ $0.innerHTML }).first.map(HamelnData.originalWork) else { return nil }
+                guard let author = elem.css("div.blo_title_base > div > a:nth-child(2)").flatMap({ elem -> Author? in
+                    guard let authorIdStr = elem["href"]?.components(separatedBy: "=").last, let authorId = Int(authorIdStr), let name = elem.innerHTML else { return nil }
+                    return HamelnData.author(id: authorId, name: name)
+                }).first else { return nil }
+                
                 let novel = Novel()
                 novel.title = title
-                // novel.originalWork
-                // novel.author
+                novel.originalWork = originalWork
+                novel.author = author
                 novel.chaptersCount = chaptersCount
                 novel.charactersCount = charactersCount
                 novel.id = novelId
@@ -63,11 +67,8 @@ class HamelnClient {
             // let title = html.css("#maind > div:nth-child(1) > p > span > a").flatMap({ $0.innerHTML }).first,
             /* let author = html.css("#maind > div:nth-child(1) > p > a:nth-child(2)").flatMap({ (elem) -> Author? in
                 guard let authorIdStr = elem["href"]?.components(separatedBy: "=").last, let authorId = Int(authorIdStr), let name = elem.innerHTML else { return nil }
-                let author = Author()
-                author.id = authorId
-                author.name = name
-                return author
-            }).first, */
+                return HamelnData.author(id: authorId, name: name)
+            }).first,*/
             let preface = html.css("#maegaki").flatMap({ $0.innerHTML }).first,
             let text = html.css("#honbun").flatMap({ $0.innerHTML }).first,
             let afterword = html.css("#atogaki").flatMap({ $0.innerHTML }).first
