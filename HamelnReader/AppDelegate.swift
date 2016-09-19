@@ -37,8 +37,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate {
     func testAPI() {
         // HamelnClient.search(originalWork: "原作：オーバーロード")
-
+        
         /*
+        HamelnClient.chapter(novelId: 84042, chapter: 1).subscribe(onNext: { (chapter) in
+            print("title = \(chapter.title), ")
+        }, onError: { (error) in
+                print(error)
+        }, onCompleted: nil, onDisposed: nil)
+
         HamelnClient.searchTypes().subscribe(onNext: { (types) in
             types.forEach({ (type) in
                 print("name = \(type.name), value = \(type.value)")

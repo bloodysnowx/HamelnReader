@@ -2,20 +2,16 @@ import Foundation
 
 extension HamelnClient {
     enum URL: String {
-        case Base = "https://search.syosetu.org/"
-        case Search = ""
-        
-        func getUrl() -> String {
-            if self == .Base { return self.rawValue }
-            return "\(URL.Base.rawValue)\(self.rawValue)"
-        }
+        case Base = "https://syosetu.org"
+        case Novel = "https://novel.syosetu.org"
+        case Search = "https://search.syosetu.org"
         
         static func NovelUrl(novelId: Int) -> String {
-            return "\(URL.Base.rawValue)\(novelId)/"
+            return "\(URL.Novel.rawValue)/\(novelId)/"
         }
         
-        static func ChapterUrl(novelId: Int, chapter: Int) -> String {
-            return "\(URL.NovelUrl(novelId: novelId))\(chapter).html"
+        static func ChapterUrl(novelId: Int, chapterId: Int) -> String {
+            return "\(URL.NovelUrl(novelId: novelId))\(chapterId).html"
         }
     }
     

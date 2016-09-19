@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0D7FBC1D8FAFC000C6060B /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0D7FBB1D8FAFC000C6060B /* History.swift */; };
+		0D0D7FBE1D8FB0E900C6060B /* BSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0D7FBD1D8FB0E900C6060B /* BSError.swift */; };
 		0D3293D11D8E65B6007C7974 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3293D01D8E65B6007C7974 /* AppDelegate.swift */; };
 		0D3293D81D8E65B6007C7974 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D3293D61D8E65B6007C7974 /* Main.storyboard */; };
 		0D3293DA1D8E65B6007C7974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D3293D91D8E65B6007C7974 /* Assets.xcassets */; };
@@ -62,6 +64,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D0D7FBB1D8FAFC000C6060B /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		0D0D7FBD1D8FB0E900C6060B /* BSError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSError.swift; sourceTree = "<group>"; };
 		0D3293CD1D8E65B6007C7974 /* HamelnReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HamelnReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D3293D01D8E65B6007C7974 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0D3293D71D8E65B6007C7974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -253,6 +257,7 @@
 			children = (
 				0D3294641D8EEF0A007C7974 /* Hameln */,
 				0D3294671D8EEF4E007C7974 /* Local */,
+				0D0D7FBD1D8FB0E900C6060B /* BSError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				0D3294681D8EEF68007C7974 /* Bookmark.swift */,
+				0D0D7FBB1D8FAFC000C6060B /* History.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -466,11 +472,13 @@
 				0D3293D11D8E65B6007C7974 /* AppDelegate.swift in Sources */,
 				0D3294591D8EDB34007C7974 /* Novel.swift in Sources */,
 				0D32945B1D8EDBBA007C7974 /* Chapter.swift in Sources */,
+				0D0D7FBE1D8FB0E900C6060B /* BSError.swift in Sources */,
 				0D32941D1D8ECBD5007C7974 /* LeftViewController.swift in Sources */,
 				0D3294531D8EDA50007C7974 /* SearchType.swift in Sources */,
 				0D3294631D8EEE8A007C7974 /* HamelnData.swift in Sources */,
 				0D32941B1D8EC8FB007C7974 /* MainViewController.swift in Sources */,
 				0D32941F1D8ECBE4007C7974 /* RightViewController.swift in Sources */,
+				0D0D7FBC1D8FAFC000C6060B /* History.swift in Sources */,
 				0D32945F1D8EE520007C7974 /* Tag.swift in Sources */,
 				0D32945D1D8EE4F5007C7974 /* Author.swift in Sources */,
 				0D3294231D8ECC91007C7974 /* RankingViewController.swift in Sources */,
